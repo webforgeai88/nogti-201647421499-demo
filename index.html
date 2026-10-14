@@ -5,10 +5,10 @@
 <meta name="robots" content="noindex, nofollow" data-publish>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Nail's lab № 1 · Ногтевая студия</title>
-<meta name="description" content="Весь прайс с карточки на Яндекс Картах – ниже, на одном экране. Выберите услугу, день и время – сообщение в WhatsApp студии соберётся само. Ежедневно 10:00–22:00, Советская ул., 67.">
+<meta name="description" content="Весь прайс с карточки на Яндекс Картах – ниже, в четырёх разделах. Выберите услугу, день и время – сообщение в WhatsApp студии соберётся само. Ежедневно 10:00–22:00, Советская ул., 67.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Маникюр и педикюр в центре Челябинска – работаем до 22:00">
-<meta property="og:description" content="Весь прайс с карточки на Яндекс Картах – ниже, на одном экране. Выберите услугу, день и время – сообщение в WhatsApp студии соберётся само. Ежедневно 10:00–22:00, Советская ул., 67.">
+<meta property="og:description" content="Весь прайс с карточки на Яндекс Картах – ниже, в четырёх разделах. Выберите услугу, день и время – сообщение в WhatsApp студии соберётся само. Ежедневно 10:00–22:00, Советская ул., 67.">
 <meta property="og:image" content="assets/hero.webp">
 <link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%276%27 y=%276%27 width=%2720%27 height=%2720%27 rx=%275%27 fill=%27%2334313a%27/%3E%3C/svg%3E">
@@ -25,6 +25,7 @@
 :root { --c-canvas: #f3e7e4; --c-surface: #fbf6f4; --c-ink: #2b292e; --c-ink-soft: #645b62; --c-accent: #34313a; --c-accent-ink: #f8f0ee; --c-accent-deep: #8c4b55; --f-display: "Tenor Sans", "Georgia", serif; --f-text: "Onest", "Segoe UI", system-ui, sans-serif; --h1k: 1; }
 </style>
 <link rel="stylesheet" href="style-prod.css">
+<link rel="stylesheet" href="tiles.css">
 </head>
 <body class="s-prod" id="top" data-wa="79048052030" data-tg="nailsslab" data-max="">
 <header class="s-bar" data-s-bar>
@@ -39,7 +40,7 @@
     <div class="s-hero__text">
       <p class="s-eyebrow">Маникюр и педикюр · Челябинск</p>
       <h1>Маникюр и педикюр в центре Челябинска – работаем до 22:00</h1>
-      <p class="s-lead">Весь прайс с карточки на Яндекс Картах – ниже, на одном экране. Выберите услугу, день и время – сообщение в WhatsApp студии соберётся само. Ежедневно 10:00–22:00, Советская ул., 67.</p>
+      <p class="s-lead">Весь прайс с карточки на Яндекс Картах – ниже, в четырёх разделах. Выберите услугу, день и время – сообщение в WhatsApp студии соберётся само. Ежедневно 10:00–22:00, Советская ул., 67.</p>
       <ul class="s-ticks"><li>Маникюр и педикюр в 4 руки</li><li>Ежедневно 10:00–22:00</li><li>«Хорошее место 2026» на Картах</li></ul>
       <p class="s-rating"><b>5,0</b> на Яндекс.Картах · 154 отзыва</p>
       <figure class="s-hero__photo"><img class="" src="assets/hero.webp" alt="Фасад студии Nail's lab № 1: вывеска «Лаборатория идеального маникюра» и круглый знак на ограде" loading="lazy" decoding="async" style="object-position:50% 40%"></figure>
@@ -71,11 +72,15 @@
   </section>
 
   <section class="s-section s-reveal" id="prices">
-    <header class="s-section__head"><h2>Цена названа до записи</h2><p>Прайс «Nail's lab № 1» с Яндекс Карт на одном экране: маникюр, педикюр, дополнительные услуги, брови и ресницы. Под названием – что входит в цену, а что оплачивается отдельно.</p></header>
-    <div class="s-board"><div class="s-board__group">
-      <h3 class="s-board__title">Маникюр</h3>
-      <ul class="s-board__list">
-        <li class="s-board__row"><span class="s-board__name">Маникюр с покрытием гель-лак<em>комбинированный маникюр, снятие входит в стоимость</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 500 ₽</span></li>
+    <header class="s-section__head"><h2>Цена названа до записи</h2><p>Откройте раздел – внутри полный прайс «Nail's lab № 1» с Яндекс Карт. Под названием услуги – что входит в цену, а что оплачивается отдельно.</p></header>
+    <div class="s-tiles">
+      <button class="s-tile" type="button" style="--i:1" id="tile1-btn" aria-expanded="false" aria-controls="tile1">
+        <img class="s-tile__img" src="assets/tile-manikyur.webp" alt="Маникюрный стол с настольными лампами и розовыми подушками для рук" width="600" height="450" loading="lazy">
+        <span class="s-tile__body"><span class="s-tile__title">Маникюр</span><span class="s-tile__meta">11 услуг · от 1 000 ₽</span></span>
+      </button>
+      <div class="s-tilepanel" id="tile1" role="region" aria-labelledby="tile1-btn">
+        <ul class="s-board__list">
+          <li class="s-board__row"><span class="s-board__name">Маникюр с покрытием гель-лак<em>комбинированный маникюр, снятие входит в стоимость</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 500 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Френч<em>входят снятие, маникюр с покрытием гель-лак и дизайн френч на всех пальцах</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 800 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Пилочный маникюр<em>снятие и покрытие в стоимость не входят</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 900 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Пилочный маникюр с покрытием<em>снятие входит в стоимость</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 900 ₽</span></li>
@@ -86,12 +91,15 @@
         <li class="s-board__row"><span class="s-board__name">Детский маникюр<em>покрытие и снятие оплачиваются отдельно</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 000 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Мужской маникюр</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 500 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Мужской пилочный маникюр</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 000 ₽</span></li>
-      </ul>
-    </div>
-<div class="s-board__group">
-      <h3 class="s-board__title">Педикюр</h3>
-      <ul class="s-board__list">
-        <li class="s-board__row"><span class="s-board__name">Педикюр и маникюр в 4 руки<em>педикюр пальчиков с гель-лаком и маникюр с гель-лаком, работают два мастера</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">5 100 ₽</span></li>
+        </ul>
+      </div>
+      <button class="s-tile" type="button" style="--i:2" id="tile2-btn" aria-expanded="false" aria-controls="tile2">
+        <img class="s-tile__img" src="assets/tile-pedikyur.webp" alt="Серые бархатные кресла для педикюра с лампой и ванночкой" width="600" height="450" loading="lazy">
+        <span class="s-tile__body"><span class="s-tile__title">Педикюр</span><span class="s-tile__meta">15 услуг · от 1 800 ₽</span></span>
+      </button>
+      <div class="s-tilepanel" id="tile2" role="region" aria-labelledby="tile2-btn">
+        <ul class="s-board__list">
+          <li class="s-board__row"><span class="s-board__name">Педикюр и маникюр в 4 руки<em>педикюр пальчиков с гель-лаком и маникюр с гель-лаком, работают два мастера</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">5 100 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Педикюр пальчиков с покрытием гель-лак<em>снятие старого покрытия входит в стоимость</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 600 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Педикюр пальцев без покрытия<em>обработка пальчиков без покрытия и без снятия</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 800 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Педикюр пальчиков с покрытием обычным лаком<em>снятие покрытия оплачивается отдельно</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 150 ₽</span></li>
@@ -106,12 +114,15 @@
         <li class="s-board__row"><span class="s-board__name">Покрытие обычным лаком без педикюра<em>обработка и снятие покрытия не входят</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">900 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Мужской педикюр<em>входит только обработка пальчиков</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 300 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Мужской педикюр SMART<em>входит полная обработка стопы</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 800 ₽</span></li>
-      </ul>
-    </div>
-<div class="s-board__group">
-      <h3 class="s-board__title">Дополнительно</h3>
-      <ul class="s-board__list">
-        <li class="s-board__row"><span class="s-board__name">Снятие гель-лака без дальнейшего покрытия<em>входит опил формы; при маникюре без покрытия – 250 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">400 ₽</span></li>
+        </ul>
+      </div>
+      <button class="s-tile" type="button" style="--i:3" id="tile3-btn" aria-expanded="false" aria-controls="tile3">
+        <img class="s-tile__img" src="assets/tile-dop.webp" alt="Золотой стеллаж с гель-лаками" width="600" height="450" loading="lazy">
+        <span class="s-tile__body"><span class="s-tile__title">Дополнительно</span><span class="s-tile__meta">15 услуг</span></span>
+      </button>
+      <div class="s-tilepanel" id="tile3" role="region" aria-labelledby="tile3-btn">
+        <ul class="s-board__list">
+          <li class="s-board__row"><span class="s-board__name">Снятие гель-лака без дальнейшего покрытия<em>входит опил формы; при маникюре без покрытия – 250 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">400 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Снятие простого лака</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">300 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Доплата за сложность снятия</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">300 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Укрепление ногтей акригелем, гелем</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">500 ₽</span></li>
@@ -126,19 +137,23 @@
         <li class="s-board__row"><span class="s-board__name">Парафинотерапия</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">550 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">SPA со свечой</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">600 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Восстанавливающий уход для рук</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">450 ₽</span></li>
-      </ul>
-    </div>
-<div class="s-board__group">
-      <h3 class="s-board__title">Брови и ресницы</h3>
-      <ul class="s-board__list">
-        <li class="s-board__row"><span class="s-board__name">Оформление бровей<em>коррекция воском и пинцетом, без окрашивания</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 100 ₽</span></li>
+        </ul>
+      </div>
+      <button class="s-tile" type="button" style="--i:4" id="tile4-btn" aria-expanded="false" aria-controls="tile4">
+        <img class="s-tile__img" src="assets/tile-brovi.webp" alt="Туалетный столик с зеркалом и лампами" width="600" height="450" loading="lazy">
+        <span class="s-tile__body"><span class="s-tile__title">Брови и ресницы</span><span class="s-tile__meta">6 услуг · от 800 ₽</span></span>
+      </button>
+      <div class="s-tilepanel" id="tile4" role="region" aria-labelledby="tile4-btn">
+        <ul class="s-board__list">
+          <li class="s-board__row"><span class="s-board__name">Оформление бровей<em>коррекция воском и пинцетом, без окрашивания</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 100 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Оформление и окрашивание бровей</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 650 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Окрашивание бровей<em>коррекция бровей в стоимость не входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 100 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Долговременная укладка бровей<em>коррекция и окрашивание в стоимость не входят</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 000 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Ламинирование ресниц</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">2 600 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Окрашивание ресниц</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">800 ₽</span></li>
-      </ul>
-    </div></div>
+        </ul>
+      </div>
+    </div>
     <p class="s-note">Цены взяты с карточки «Nail's lab № 1» на Яндекс Картах на 14 октября 2026. На карточке прайс отмечен как давно не обновлявшийся: точную цену администратор назовёт при записи. Массаж и LPG здесь не показаны: они есть на карточке.</p>
   </section>
 
@@ -200,5 +215,6 @@
 <footer class="s-foot"><p>Nail's lab № 1 · Челябинск</p><p>Маникюр, педикюр, гель-лак, наращивание, SMART-педикюр, Golden Trace, брови и ресницы</p></footer>
 <nav class="s-dock" aria-label="Быстрая связь"><a class="s-btn" href="#widget">Записаться онлайн</a><a class="s-btn s-btn--ghost" href="tel:+79048052030">Позвонить</a></nav>
 <script src="style.js" defer></script>
+<script src="tiles.js" defer></script>
 </body>
 </html>
